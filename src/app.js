@@ -5,6 +5,8 @@ const path = require('path');
 const methodOverride = require('method-override');
 const indexRouter = require('./routes/router');
 
+let port = process.env.PORT || 3000;
+
 app.use(express.json())
 app.use(express.urlencoded({ extended:true }));
 app.use(methodOverride('_method'));
@@ -16,7 +18,6 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 
-app.listen(3000, function(){
-    console.log('El servidor esta corriendo en el puerto 3000');
-    console.log('http://localhost:3000');
+app.listen(port, function(){
+    console.log('Servidor corriendo en el puerto: ' + port);
 })
