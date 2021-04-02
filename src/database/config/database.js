@@ -1,7 +1,7 @@
 module.exports = {
   "production": {
     "username": "jerodietz",
-    "password": "Jero12345!",
+    "password": "Jerodelavilla123456789",
     "database": "jerodietz_notitas",
     "host": "mysql-jerodietz.alwaysdata.net",
     "dialect": "mysql"
