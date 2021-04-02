@@ -1,9 +1,9 @@
 module.exports = {
-  "development": {
-    "username": "root",
-    "password": null,
-    "database": "notitas_db",
-    "host": "127.0.0.1",
+  "production": {
+    "username": "jerodietz",
+    "password": 'Jero12345!',
+    "database": "jerodietz_notitas",
+    "host": "mysql-jerodietz.alwaysdata.net",
     "dialect": "mysql"
   },
   "test": {
@@ -13,7 +13,7 @@ module.exports = {
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
-  "production": {
+  "development": {
     "username": "root",
     "password": null,
     "database": "database_production",
