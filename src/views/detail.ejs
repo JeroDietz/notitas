@@ -22,7 +22,7 @@
     <main>
         <section class="editForm">
             <h1>Editar una nota</h1>
-            <form action="mysql-jerodietz.alwaysdata.net<%= nota.id %>?_method=PUT" method="POST">
+            <form action="/detail/<%= nota.id %>?_method=PUT" method="POST">
                 <div>
                     <label for="">Título</label>
                     <input type="text" name="title" value="<%= nota.titulo %> ">
