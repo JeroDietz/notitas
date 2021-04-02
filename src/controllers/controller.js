@@ -5,8 +5,6 @@ module.exports = {
     index: function(req, res){
         db.Nota.findAll().then(function(notas){
             return res.render('index', {notas})
-        }).catch(function (errors) {
-            return res.send(errors)
         })
     },
 
@@ -16,8 +14,6 @@ module.exports = {
             texto: req.body.description
         }).then(function () {
             res.redirect("/")
-        }).catch(function (errors) {
-            return res.send(errors)
         })
     },
 
@@ -43,7 +39,7 @@ module.exports = {
             .then(function (notaNueva) {
                 res.redirect("/")
             }).catch(function (e) {
-                res.send(e)
+               return res.send(e)
             })
     },
 
