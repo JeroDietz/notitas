@@ -1,9 +1,9 @@
 module.exports = {
   "production": {
-    "username": "jerodietz",
-    "password": "Jerodelavilla123456789",
-    "database": "jerodietz_notitas",
-    "host": "mysql-jerodietz.alwaysdata.net",
+    "username": process.env.DB_USER,
+    "password": process.env.DB_PASS,
+    "database": process.env.DB_NAME,
+    "host": process.env.DB_HOST,
     "dialect": "mysql"
   },
   "test": {
